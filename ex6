@@ -1,0 +1,25 @@
+public class EX6 {
+
+    public String convertToBinary(int decimalNumber) {
+        return Integer.toBinaryString(decimalNumber);
+    }
+
+    public String convertToOctal(int decimalNumber) {
+        return Integer.toOctalString(decimalNumber);
+    }
+
+    public static void main(String[] args) {
+        EX6 converter = new EX6();
+
+        int decimalNumber = 42; // Replace with your desired decimal number
+
+        // Convert to binary and octal
+        String binaryResult = converter.convertToBinary(decimalNumber);
+        String octalResult = converter.convertToOctal(decimalNumber);
+
+        // Display the results
+        System.out.println("Decimal: " + decimalNumber);
+        System.out.println("Binary: " + binaryResult);
+        System.out.println("Octal: " + octalResult);
+    }
+}
